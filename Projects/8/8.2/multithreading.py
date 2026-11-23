@@ -8,10 +8,10 @@ ranges = [
     [0, 16]
 ]
 
-def sum_range(thread_id, start, end, results):
-    # end + 1 because Python's range() stops before the upper bound
-    results[thread_id] = sum(range(start, end + 1))
+#[15, 63]
 
+def sum_range(thread_id, start, end, results):
+    results[thread_id] = sum(range(start, end + 1))
 
 def sum_all_ranges(ranges):
     n = len(ranges)
